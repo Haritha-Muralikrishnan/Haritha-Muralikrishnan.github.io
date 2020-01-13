@@ -24,9 +24,19 @@
                 width: 10%;
             }
             .mid{
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
                 top: 50%;
                 left: 50%;
-                position: absolute;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%)
+            }
+            #fade:hover .mid{
+                opacity: 1;
+            }
+            #fade:hover .image{
+                opacity: 1;
             }
         </style>
     </head>
@@ -76,44 +86,44 @@
         </div>
 
         <!--GEARS-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4" style="position: relative;">
-                    <img src="images/helmet-1038400_1920.jpg" alt="img" style="width: 100%;margin-bottom: 15px;">
-                    <div class="mid">
-                        <div class="but"><a href="#">line</a></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/helmet-1038400_1920.jpg" alt="img" style="width: 100%;margin-bottom: 15px;">
-                    <div class="mid">
-                        <div class="but"><a href="#">line</a></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/helmet-1038400_1920.jpg" alt="img" style="width: 100%;margin-bottom: 15px;">
-                    <div class="mid">
-                        <div class="but"><a href="#">line</a></div>
-                    </div>
-                </div>
-            </div>
+        <div class="container-fluid" style="position: relative;" id="fade">
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="images/helmet-1038400_1920.jpg" alt="img" style="width: 100%;margin-bottom: 15px;">
-                    <div class="mid">
-                        <div class="but"><a href="#">line</a></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <img src="images/helmet-1038400_1920.jpg" alt="img" style="width: 100%;margin-bottom: 15px;">
+                    <img src="images/helmet-1038400_1920.jpg" alt="img" class="image" style="width: 100%;margin-bottom: 15px;opacity: 0.5;transition: .5s ease; backface-visibility: hidden;">
                     <div class="mid">
                         <div class="but"><a href="#" class="btn btn-info" role="button">line</a></div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <img src="images/helmet-1038400_1920.jpg" alt="img" style="width: 100%;margin-bottom: 15px;">
+                    <img src="images/helmet-1038400_1920.jpg" alt="img" class="image" style="width: 100%;margin-bottom: 15px;opacity: 1;transition: .5s ease; backface-visibility: hidden;">
                     <div class="mid">
-                        <div class="but"><a href="#">line</a></div>
+                        <div class="but"><a href="#" class="btn btn-info" role="button">line</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/helmet-1038400_1920.jpg" alt="img" class="image" style="width: 100%;margin-bottom: 15px;opacity: 1;transition: .5s ease; backface-visibility: hidden;">
+                    <div class="mid">
+                        <div class="but"><a href="#" class="btn btn-info" role="button">line</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="images/helmet-1038400_1920.jpg" alt="img" class="image" style="width: 100%;margin-bottom: 15px;opacity: 1;transition: .5s ease; backface-visibility: hidden;">
+                    <div class="mid">
+                        <div class="but"><a href="#" class="btn btn-info" role="button">line</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/helmet-1038400_1920.jpg" alt="img" class="image" style="width: 100%;margin-bottom: 15px;opacity: 1;transition: .5s ease; backface-visibility: hidden;">
+                    <div class="mid">
+                        <div class="but"><a href="#" class="btn btn-info" role="button">line</a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/helmet-1038400_1920.jpg" alt="img" class="image" style="width: 100%;margin-bottom: 15px;opacity: 1;transition: .5s ease; backface-visibility: hidden;">
+                    <div class="mid">
+                        <div class="but"><a href="#" class="btn btn-info" role="button">line</a></div>
                     </div>
                 </div>
             </div>
