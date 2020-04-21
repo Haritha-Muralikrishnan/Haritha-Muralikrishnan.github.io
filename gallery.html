@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>    
+  <link type="text/css" rel="stylesheet" href="index.css" media="screen,projection">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- NAVBAR -->
+  <nav class="blue darken-3">
+    <div class="nav-wrapper">
+      <div class="row">
+        <div class="col s6 m6 l6">
+          <a href="index.html" class="breadcrumb hide-on-small-and-down">Home</a>
+          <a href="#" class="breadcrumb hide-on-small-and-down">Gallery</a>
+          <a href="index.html" class="hide-on-med-and-up">Home<i class="material-icons left">chevron_left</i></a>
+        </div>
+        <div class="col s6 m6 l6">
+          <a href="" class="brand-logo right hide-on-small-and-down"><img src="images/076c52db9f14b477031df261d5e1532e.png" alt="Logo" style="width: 5rem; height: 5rem;"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+
+  <!-- GALLERY -->
+  <div class="container">
+    <h3 class="center-align">Gallery</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <img src="images/scooter-2792992.jpg" alt="" class="materialboxed responsive-img card">
+      </div>
+      <div class="col s12 m6 l4">
+        <img src="images/scooter-2792992.jpg" alt="" class="materialboxed responsive-img card">
+      </div>
+      <div class="col s12 m6 l4">
+        <img src="images/scooter-2792992.jpg" alt="" class="materialboxed responsive-img card">
+      </div>
+      <div class="col s12 m6 l4">
+        <img src="images/scooter-2792992.jpg" alt="" class="materialboxed responsive-img card">
+      </div>
+      <div class="col s12 m6 l4">
+        <img src="images/scooter-2792992.jpg" alt="" class="materialboxed responsive-img card">
+      </div>
+      <div class="col s12 m6 l4">
+        <img src="images/scooter-2792992.jpg" alt="" class="materialboxed responsive-img card">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="materialize/js/materialize.js"></script>
+
+  <!-- MATERIALBOXED -->
+  <script>
+    document.addEventListener('DOMContentLoaded',function(){
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems,{});
+    });
+  </script>
+
+
+    
+</body>
+</html>
